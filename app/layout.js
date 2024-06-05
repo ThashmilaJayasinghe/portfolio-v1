@@ -1,7 +1,9 @@
-import { Inter } from "next/font/google";
+import { Inter, Open_Sans, Overpass_Mono } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const open_sans = Open_Sans({ subsets: ["latin"] });
+const overpass_mono = Overpass_Mono({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Thashmila Jayasinghe",
@@ -11,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={overpass_mono.className}>{children}</body>
     </html>
   );
 }
