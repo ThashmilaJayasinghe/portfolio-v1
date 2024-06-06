@@ -1,8 +1,8 @@
 import { Fragment, useState } from 'react'
 import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react'
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import { ExclamationTriangleIcon, XMarkIcon  } from '@heroicons/react/24/outline'
 
-export default function Details({ open, setOpen }) {
+export default function Details({ open, setOpen, title, description }) {
 
   return (
     <Transition show={open}>
@@ -15,7 +15,7 @@ export default function Details({ open, setOpen }) {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+          <div className="fixed inset-0 bg-gray-500 bg-opacity-45 transition-opacity" />
         </TransitionChild>
 
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
@@ -30,18 +30,17 @@ export default function Details({ open, setOpen }) {
             >
               <DialogPanel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                 <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                  <div className="sm:flex sm:items-start">
-                    <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                      <ExclamationTriangleIcon className="h-6 w-6 text-red-600" aria-hidden="true" />
-                    </div>
+                  <button onClick={() => setOpen(false)} className="absolute top-3 right-3">
+                    <XMarkIcon className="h-6 w-6 text-red-600" aria-hidden="true" />
+                  </button>  
+                  <div className="sm:flex sm:items-start">                      
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                        Deactivate account
+                        {title}
                       </DialogTitle>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-                          Are you sure you want to deactivate your account? All of your data will be permanently
-                          removed. This action cannot be undone.
+                          {description}
                         </p>
                       </div>
                     </div>
@@ -53,7 +52,7 @@ export default function Details({ open, setOpen }) {
                     className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
                     onClick={() => setOpen(false)}
                   >
-                    Deactivate
+                    Source Code
                   </button>
                   <button
                     type="button"
@@ -61,7 +60,7 @@ export default function Details({ open, setOpen }) {
                     onClick={() => setOpen(false)}
                     data-autofocus
                   >
-                    Cancel
+                    Demo
                   </button>
                 </div>
               </DialogPanel>
