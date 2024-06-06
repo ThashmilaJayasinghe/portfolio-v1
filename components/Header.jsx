@@ -41,10 +41,10 @@ export default function Header() {
             About
           </a>        
           <a href="#" className="text-sm font-semibold leading-8 text-gray-900">
-            Experience
+            Skills
           </a>
-          <a href="#" className="text-sm font-semibold leading-8 text-gray-900">
-            Work
+          <a href="#projects" className="text-sm font-semibold leading-8 text-gray-900">
+            Projects
           </a>
           <a href="#" className="text-sm font-semibold leading-8 text-gray-900">
             Contact
@@ -88,16 +88,16 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Experience
+                  Skills
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Work
+                  Projects
                 </a>
                 <a
-                  href="#"
+                  href="#projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact

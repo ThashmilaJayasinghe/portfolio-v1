@@ -2,8 +2,8 @@ export default function Skills() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h1 className="text-center mt-2 pb-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skills</h1>
-        <p className="text-center text-lg font-semibold leading-8 text-gray-900">
+        <h2 className="text-center mt-2 pb-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skills</h2>
+        <p className="text-center text-lg leading-8 text-gray-900">
           I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.
         </p>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
