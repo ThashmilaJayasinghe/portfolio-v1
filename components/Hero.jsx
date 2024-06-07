@@ -13,7 +13,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden bg-orange-50 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-brown-50 py-24 sm:py-32">
       {/* <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
@@ -40,20 +40,26 @@ export default function Hero() {
       </div> */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Hello!
-            {/* <img></img>           */}
+          <h1 className="inline text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Hello!            
+            {/* <img
+              // className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src='/hand.svg'
+              alt="wave"
+              width={65}
+              // height={24}
+            /> */}
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-800">
             I'm Thashmila, a software engineer focused on building great user experiences.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-amber-950 sm:grid-cols-2 md:flex lg:gap-x-10">
-          <p className="mt-6 text-lg leading-8 text-gray-900">
-            Email me - 
-            <a href="#">
-              thashmilajayasinghe@gmail.com <span aria-hidden="true">&rarr;</span>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
+          <p className="mt-6 text-lg font-semibold leading-8 text-gray-800">
+            Email me<span className="px-1.5 text-brown-150" aria-hidden="true">&rarr;</span>
+            <a className="font-semibold hover:" href="#">
+              thashmilajayasinghe@gmail.com
             </a>
           </p>
           </div>
