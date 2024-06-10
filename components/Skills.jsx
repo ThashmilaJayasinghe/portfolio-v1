@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div className="bg-brown-50 py-24 sm:py-24">
+    <div id="skills" className="bg-brown-50 py-24 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center mt-2 pb-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skills</h2>
         <p className="text-center text-lg leading-8 text-gray-900">

@@ -13,7 +13,12 @@ const stats = [
 
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden bg-brown-50 py-24 sm:py-24">
+    <div id="hero" className="h-[89vh] relative isolate overflow-hidden bg-brown-50 py-24 sm:py-24">
+      {/* <img
+        src="./noise.svg"
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+      /> */}
       {/* <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
@@ -58,7 +63,7 @@ export default function Hero() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
           <p className="mt-6 text-lg font-semibold leading-8 text-gray-800">
             Email me<span className="px-1.5 text-brown-150" aria-hidden="true">&rarr;</span>
-            <a className="font-semibold hover:" href="#">
+            <a className="font-semibold hover:" href="mailto:thashmilajayasinghe@gmail.com">
               thashmilajayasinghe@gmail.com
             </a>
           </p>

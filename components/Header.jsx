@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   Dialog,
   DialogPanel,
@@ -16,13 +16,22 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [top, setTop] = useState(true);
+
+  useEffect(() => {
+    const scrollHandler = () => {
+      window.scrollY > 10 ? setTop(false) : setTop(true)
+    };
+    window.addEventListener('scroll', scrollHandler);
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, [top]); 
 
   return (
-    <header className="bg-brown-50">
+    <header className={`h-[11vh] w-screen bg-brown-50 fixed z-50 top-0 ${!top && !mobileMenuOpen && 'shadow'}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#hero" className="-m-1.5 p-1.5">
             Thashmila Jayasinghe
           </a>
         </div>
@@ -37,19 +46,19 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-8 text-gray-900">
+          <a href="#about" className="text-sm font-semibold leading-8 text-gray-900">
             About
           </a>        
-          <a href="#" className="text-sm font-semibold leading-8 text-gray-900">
+          <a href="#skills" className="text-sm font-semibold leading-8 text-gray-900">
             Skills
           </a>
           <a href="#projects" className="text-sm font-semibold leading-8 text-gray-900">
             Projects
           </a>
-          <a href="#" className="text-sm font-semibold leading-8 text-gray-900">
+          <a href="#contact" className="text-sm font-semibold leading-8 text-gray-900">
             Contact
           </a>          
-          <a href="#" className="rounded-md bg-brown-100 px-3.5 text-sm leading-8 text-white shadow-sm hover:bg-brown-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150">
+          <a href="https://drive.google.com/file/d/1-JzkJh84wZtg05mSMZhHSucXvrlcuZCb/view?usp=sharing" target="_blank" download="Thashmila_Jayasinghe_resume.pdf" className="rounded-md bg-brown-150 px-3.5 text-sm leading-8 text-white shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150">
             Resume
           </a>
         </div>
@@ -74,25 +83,25 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-brown-75"
                 >
                   About
                 </a>
                 <a
-                  href="#"
+                  href="#skills"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-brown-75"
                 >
                   Skills
                 </a>
                 <a
-                  href="#"
+                  href="#projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-brown-75"
                 >
                   Projects
                 </a>
                 <a
-                  href="#projects"
+                  href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-brown-75"
                 >
                   Contact
@@ -100,7 +109,9 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/1-JzkJh84wZtg05mSMZhHSucXvrlcuZCb/view?usp=sharing"
+                  target="_blank"
+                  download="Thashmila_Jayasinghe_resume.pdf"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-brown-75"
                 >
                   Resume

@@ -54,7 +54,7 @@ export default function Projects() {
     <div id="projects" className="bg-brown-50 py-24 sm:py-24">      
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Projects</h2>          
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Projects</h2>          
           <p className="mt-2 text-lg leading-8 text-gray-600">
             Learn how to grow your business with our expert advice.
           </p>
@@ -79,7 +79,7 @@ export default function Projects() {
                 </h3>
                 <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{project.description}</p>
               </div> 
-              <button onClick={() => setOpen(true)} className="absolute inset-x-0 bottom-0 py-4 px-4 text-center text-white bg-brown-100 hover:bg-brown-150 font-medium rounded-md transition duration-300 ease-in-out group-hover:opacity-100 opacity-0">
+              <button onClick={() => setOpen(true)} className="absolute inset-x-0 bottom-0 py-4 px-4 text-center text-white bg-brown-150 hover:bg-brown-100 font-medium rounded-md transition duration-300 ease-in-out group-hover:opacity-100 opacity-0">
                 View Details
               </button>                           
             </article>
