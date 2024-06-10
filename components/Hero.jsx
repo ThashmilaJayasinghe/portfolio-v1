@@ -62,7 +62,7 @@ export default function Hero() {
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
           <p className="mt-6 text-lg font-semibold leading-8 text-gray-800">
-            Email me<span className="px-1.5 text-brown-150" aria-hidden="true">&rarr;</span>
+            Get in Touch<span className="px-2 text-brown-150" aria-hidden="true">&rarr;</span>
             <a className="font-semibold hover:" href="mailto:thashmilajayasinghe@gmail.com">
               thashmilajayasinghe@gmail.com
             </a>
