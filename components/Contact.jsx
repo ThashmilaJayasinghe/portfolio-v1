@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react';
-// import emailjs from '@emailjs/browser';
+import { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Field, Label, Switch } from '@headlessui/react'
 
@@ -28,11 +28,22 @@ export default function Contact() {
     console.log("form data: ", formData);
     setFormData({ name: '', email: '', message: '' });
 
-    // emailjs.send("service_zhqj6oy","template_c8z45kv",{
-    //   name: "Anna",
-    //   message: "hello this is a test",
-    //   email: "it19051758@my.sliit.lk",
-    //   });
+    emailjs.init('6NjwdFZSJbHVb8VeQ');
+
+    emailjs
+      .send('service_zhqj6oy', 'template_c8z45kv', {
+        name: formData.name,
+        message: formData.message,
+        email: formData.email
+        })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   }
 
   return (
