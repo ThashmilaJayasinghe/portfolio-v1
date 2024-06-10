@@ -6,41 +6,134 @@ export default function Skills() {
         <p className="text-center text-lg leading-8 text-gray-900">
           I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.
         </p>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           <img
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-            alt="Transistor"
+            src="javascript-1.svg"
+            alt="Javascript"
             width={158}
             height={48}
+            title="Javascript"
           />
           <img
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-            alt="Reform"
+            src="java-4.svg"
+            alt="Java"
             width={158}
             height={48}
+            title="Java"
           />
           <img
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-            alt="Tuple"
+            src="python-5.svg"
+            alt="Python"
             width={158}
             height={48}
+            title="Python"
           />
           <img
             className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-            alt="SavvyCal"
+            src="sql.svg"
+            alt="SQL"
             width={158}
             height={48}
+            title="SQL"
           />
           <img
             className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-            alt="Statamic"
+            src="react.svg"
+            alt="React"
             width={158}
             height={48}
+            title="React"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="react-native-1.svg"
+            alt="React Native"
+            width={158}
+            height={48}
+            title="React Native"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="node.svg"
+            alt="Node JS"
+            width={158}
+            height={48}
+            title="Node JS"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="html-5.svg"
+            alt="HTML"
+            width={158}
+            height={48}
+            title="HTML"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="tailwind.svg"
+            alt="Tailwind CSS"
+            width={158}
+            height={48}
+            title="Tailwind CSS"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="GitHub-Logo.svg"
+            alt="GitHub"
+            width={158}
+            height={48}
+            title="GitHub"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="mongodb.svg"
+            alt="MongoDB"
+            width={158}
+            height={48}
+            title="MongoDB"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="firebase.svg"
+            alt="Firebase"
+            width={158}
+            height={48}
+            title="Firebase"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="docker-4.svg"
+            alt="Docker"
+            width={158}
+            height={48}
+            title="Docker"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="tensorflow-2.svg"
+            alt="Tensorflow"
+            width={158}
+            height={48}
+            title="Tensorflow"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="jupyter.svg"
+            alt="Jupyter Notebook"
+            width={158}
+            height={48}
+            title="Jupyter Notebook"
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="google-cloud.svg"
+            alt="Google Cloud Platform"
+            width={158}
+            height={48}
+            title="Google Cloud Platform"
           />
         </div>
       </div>
