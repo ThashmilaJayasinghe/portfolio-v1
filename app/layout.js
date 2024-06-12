@@ -1,5 +1,6 @@
 import { Inter, Open_Sans, Overpass_Mono } from "next/font/google";
 import "./globals.css";
+import {ThemeProvider} from 'next-themes'
 
 const inter = Inter({ subsets: ["latin"] });
 const open_sans = Open_Sans({ subsets: ["latin"] });
@@ -12,8 +13,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={overpass_mono.className}>{children}</body>
+    <html lang="en">      
+      <body className={overpass_mono.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>  
+      </body>
     </html>
   );
 }
