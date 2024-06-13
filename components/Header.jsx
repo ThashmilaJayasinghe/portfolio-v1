@@ -22,6 +22,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [top, setTop] = useState(true);
   const {theme, setTheme} = useTheme();
+  const [preferredTheme, setPreferredTheme] = useState( theme || 'light');
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -34,8 +35,11 @@ export default function Header() {
   return (
     <header className={`h-[11vh] w-screen bg-brown-50 dark:bg-brown-200 fixed z-10 top-0 ${!top && !mobileMenuOpen && 'shadow'}`}>
       <div className="fixed right-2 bottom-4 flex items-center">
-        <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-          {theme === 'light' ? (
+        <button onClick={() => {
+          setTheme(preferredTheme === 'dark' ? 'light' : 'dark');
+          setPreferredTheme(theme);
+        }}>
+          {preferredTheme === 'light' ? (
             <MoonIcon className="h-6 w-6 text-fc-50" aria-hidden="true" />
           ) : (
             <SunIcon className="h-6 w-6 text-fc-100" aria-hidden="true" />
