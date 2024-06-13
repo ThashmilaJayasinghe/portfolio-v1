@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react'
 import { ExclamationTriangleIcon, XMarkIcon  } from '@heroicons/react/24/outline'
 
-export default function Details({ open, setOpen, title, description }) {
+export default function Details({ open, setOpen, title, description, tech }) {
 
   return (
     <Transition show={open}>
@@ -42,6 +42,14 @@ export default function Details({ open, setOpen, title, description }) {
                         <p className="text-sm text-gray-500">
                           {description}
                         </p>
+                      </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-gray-500">
+                          {description}
+                        </p>
+                        {tech.map(t => 
+                          <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400">{t}</span>
+                        )}
                       </div>
                     </div>
                   </div>

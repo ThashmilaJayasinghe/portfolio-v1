@@ -9,11 +9,6 @@ export default function Home() {
   return (
       <div>
         <div>
-          {/* <img
-            src="./noise.svg"
-            alt=""
-            className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-          /> */}
           <Header />
           <Hero />
         </div>

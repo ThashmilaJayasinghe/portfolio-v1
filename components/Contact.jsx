@@ -56,10 +56,10 @@ export default function Contact() {
   return (
     <div id="contact" className="bg-brown-50 dark:bg-brown-200 py-24 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="mt-2.5 text-center pb-2 text-3xl font-bold tracking-tight text-fc-50 dark:text-fc-100 sm:text-4xl">Contact me</h2>
-        <p className="text-center text-lg leading-8 text-fc-50 dark:text-fc-100">
-          I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.
-        </p>
+        <h2 className="mt-2.5 text-center text-3xl font-bold tracking-tight text-fc-50 dark:text-fc-100 sm:text-4xl">Contact me</h2>
+        {/* <p className="text-center text-lg leading-8 text-fc-50 dark:text-fc-100">
+          I hope to find an internship something something what am I looking for?.
+        </p> */}
         {/* two column layout */}
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-auto gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-10">
           {/* Contact Details */}
@@ -81,7 +81,7 @@ export default function Contact() {
                     <p className="text-center text-lg text-fc-50 dark:text-fc-100">Colombo, Sri Lanka</p>
                   </div>   
                   <div className="mt-10 text-center text-fc-50 dark:text-fc-100">                        
-                    <p>I hope to find an internship something something what am I looking for?</p>
+                    <p>I'm seeking internship opportunities to further develop my skills and contribute to innovative projects.</p>
                   </div>  
                   <div className="mt-8 text-center text-fc-50 dark:text-fc-100 text-3xl font-semibold">
                     <p className="mb-2">Connect with me</p>                    
@@ -174,7 +174,7 @@ export default function Contact() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-7 mb-3">
+                  <div className="mt-12 mb-4">
                     <button
                       type="submit"
                       className="block w-full rounded-md bg-brown-150 px-3.5 py-2.5 text-center text-base font-semibold text-white shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150"

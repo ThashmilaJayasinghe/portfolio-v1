@@ -36,8 +36,9 @@ export default function Header() {
     <header className={`h-[11vh] w-screen bg-brown-50 dark:bg-brown-200 fixed z-10 top-0 ${!top && !mobileMenuOpen && 'shadow'}`}>
       <div className="fixed right-2 bottom-4 flex items-center">
         <button onClick={() => {
-          setTheme(preferredTheme === 'dark' ? 'light' : 'dark');
-          setPreferredTheme(theme);
+          const newTheme = preferredTheme === 'dark' ? 'light' : 'dark';
+          setTheme(newTheme);
+          setPreferredTheme(newTheme);
         }}>
           {preferredTheme === 'light' ? (
             <MoonIcon className="h-6 w-6 text-fc-50" aria-hidden="true" />
