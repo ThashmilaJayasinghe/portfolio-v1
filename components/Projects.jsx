@@ -61,7 +61,7 @@ import { useState } from 'react';
 import Details from './Details.jsx';
 
 export default function Projects() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <div id="projects" className="bg-brown-50 dark:bg-brown-200 py-24 sm:py-24">      

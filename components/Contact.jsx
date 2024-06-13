@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Field, Label, Switch } from '@headlessui/react'
+import Confirmation from './Confirmation.jsx';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -15,6 +16,8 @@ export default function Contact() {
     email: '',
     message: ''
   });
+  const [open, setOpen] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   function handleChange(e) {
     setFormData({
@@ -38,10 +41,14 @@ export default function Contact() {
         })
       .then(
         () => {
-          console.log('SUCCESS!');
+          // console.log('SUCCESS!');
+          setSuccess(true);
+          setOpen(true);
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          // console.log('FAILED...', error.text);
+          setSuccess(false);
+          setOpen(true);
         },
       );
   }
@@ -114,7 +121,8 @@ export default function Contact() {
             </div>            
           </div>
           {/* Contact Form */}        
-          <div className="lg:col-span-2 lg:col-start-2 lg:row-start-1 lg:mx-auto lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div className="lg:col-span-2 lg:col-start-2 lg:row-start-1 lg:mx-auto lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">  
+            <Confirmation open={open} setOpen={setOpen} success={success} />          
             <div className="g:max-w-lg">                
               <div className="isolate rounded-md bg-brown-50 dark:bg-brown-200 shadow-xl border border-brown-75 mt-10 px-6 py-9 sm:py-7 lg:px-8">                  
                 <form onSubmit={handleSubmit} className="mx-auto max-w-xl">
