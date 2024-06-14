@@ -17,8 +17,8 @@ export default function About() {
         </div>
         <div className="flex justify-center p-12 lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            className="max-w-none rounded-xl bg-brown-150 shadow-xl dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
-            src="./photo.avif"
+            className="opacity-80 max-w-none rounded-xl bg-brown-150 shadow-xl dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
+            src="./test.jpeg"
             width={250}
             alt=""
           />        

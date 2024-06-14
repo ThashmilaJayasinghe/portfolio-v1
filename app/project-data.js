@@ -1,58 +1,46 @@
 const projects = [
   {
     id: 1,
-    title: 'MERN Project',
-    href: '#',
-    tech: ['ReactJS', 'MongoDB', 'GitHub'],
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl: '/hand.svg'
+    open: false,
+    title: 'Supply-Demand Management for Agri Products',
+    tech: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    imageUrl: '/agri-t.png',
   },
   {
     id: 2,
-    title: 'Mobile App',
-    href: '#',
-    tech: ['ReactJS', 'MongoDB', 'GitHub'],
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl: '/hand.svg'
-  },
-  {
-    id: 3,
-    title: 'ML project',
-    href: '#',
-    tech: ['ReactJS', 'MongoDB', 'GitHub'],
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl: '/hand.svg'
-  },
-  {
-    id: 4,
-    title: 'Java API',
-    href: '#',
-    tech: ['ReactJS', 'MongoDB', 'GitHub'],
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl: '/hand.svg'
-  },
-  {
-    id: 5,
-    title: 'DSA Project',
-    href: '#',
-    tech: ['ReactJS', 'MongoDB', 'GitHub'],
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl: '/hand.svg'
+    open: false,
+    title: 'Mobile App to combat Intimate Partner Violence',
+    tech: ['React Native', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    imageUrl: '/ipv-t.png'
   },
   {
     id: 6,
-    title: 'Research',
-    href: '#',
-    tech: ['ReactJS', 'MongoDB', 'GitHub'],
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl: '/hand.svg'
+    open: false,
+    title: 'Expert System for Early Childhood Development through Music',
+    tech: ['Python', 'Tensorflow', 'Jupyter Notebook', 'React Native', 'Google Cloud Platform'],
+    imageUrl: '/agri-t.png'
   },
+  // {
+  //   id: 4,
+  //   open: false,
+  //   title: 'Java API',   
+  //   tech: ['ReactJS', 'MongoDB', 'GitHub'],
+  //   imageUrl: '/hand.svg'
+  // },
+  // {
+  //   id: 5,
+  //   open: false,
+  //   title: 'DSA Project',
+  //   tech: ['ReactJS', 'MongoDB', 'GitHub'],
+  //   imageUrl: '/hand.svg'
+  // },
+  // {
+  //   id: 3,
+  //   open: false,
+  //   title: 'Research',
+  //   tech: ['ReactJS', 'MongoDB', 'GitHub'],
+  //   imageUrl: '/hand.svg'
+  // },
 ]
 
 export default projects;
