@@ -5,7 +5,7 @@ import Project1 from './Project1.jsx';
 import Project2 from './Project2.jsx';
 import Project6 from './Project6.jsx';
 
-export default function Details({ open, setOpen, id, title, tech }) {
+export default function Details({ open, setOpen, id, title, tech, demo, source }) {
 
   return (
     <Transition show={open}>
@@ -59,22 +59,25 @@ export default function Details({ open, setOpen, id, title, tech }) {
                     </div>
                   </div>
                 </div>
-                <div className="bg-brown-50 dark:bg-brown-200 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                  <button
-                    type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
-                    onClick={() => setOpen(false)}
-                  >
-                    Source Code
-                  </button>
-                  <button
-                    type="button"
-                    className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-                    onClick={() => setOpen(false)}
-                    data-autofocus
-                  >
-                    Demo
-                  </button>
+                <div className="bg-brown-50 dark:bg-brown-200 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">                                
+                  {source !== null &&
+                    <a
+                      href={source}
+                      target="_blank"
+                      className="inline-flex w-full justify-center rounded-md bg-brown-150 px-3.5 text-sm leading-8 text-white shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150 sm:ml-3 sm:w-auto"
+                    >
+                      Source Code
+                    </a>    
+                  } 
+                  {demo !== null &&
+                    <a
+                    href={demo}
+                    target="_blank"
+                    className="mt-3 inline-flex w-full justify-center rounded-md bg-brown-150 px-3.5 text-sm leading-8 text-white shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150 sm:mt-0 sm:w-auto"
+                    >
+                      Demo
+                    </a>   
+                  }          
                 </div>
               </DialogPanel>
             </TransitionChild>

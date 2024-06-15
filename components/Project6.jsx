@@ -3,10 +3,10 @@ export default function Project6() {
     <div>
       <div className="flex items-center justify-center w-full group-hover:opacity-75 transition duration-300 ease-in-out">                
         <img
-          className="rounded-md bg-brown-150 shadow-inner dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
-          src="./ipv.png"
+          className="opacity-80 rounded-md bg-brown-150 shadow-inner dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
+          src="./research.png"
           alt="Mobile App"
-          width={500}
+          width={600}
         />
       </div>
       <p className="mt-4 text-sm leading-6 text-fc-50 dark:text-fc-100">

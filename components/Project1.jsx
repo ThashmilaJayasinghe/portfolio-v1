@@ -3,7 +3,7 @@ export default function Project1() {
     <div>
       <div className="flex items-center justify-center w-full group-hover:opacity-75 transition duration-300 ease-in-out">                
         <img
-          className="rounded-md bg-brown-150 shadow-inner dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
+          className="opacity-80 rounded-md bg-brown-150 shadow-inner dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
           src="./agri.png"
           alt="Mobile App"
           width={800}

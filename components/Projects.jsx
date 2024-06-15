@@ -15,10 +15,7 @@ export default function Projects() {
     <div id="projects" className="bg-brown-50 dark:bg-brown-200 py-24 sm:py-24">      
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2 text-fc-50 dark:text-fc-100">Projects</h2>          
-          {/* <p className="mt-2 text-lg leading-8 text-fc-50 dark:text-fc-100">
-            These are my projects.
-          </p> */}
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2 text-fc-50 dark:text-fc-100">Projects</h2>       
         </div>
         <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 pt-3 sm:mt-4 sm:pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {projects.map((project) => (
@@ -30,11 +27,13 @@ export default function Projects() {
               id={project.id} 
               title={project.title} 
               tech={project.tech} 
+              demo={project.demo}
+              source={project.source}
             />
             <article key={project.id} className="group relative bg-brown-75 dark:bg-brown-175 shadow-md rounded-md p-1 flex max-w-xl flex-col items-start justify-between">
               <div className="flex items-center justify-center w-full group-hover:opacity-75 transition duration-300 ease-in-out">                
                 <img
-                  className="rounded-md bg-brown-150 shadow-inner dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
+                  className="opacity-80 rounded-md bg-brown-150 shadow-inner dark:shadow-inner shadow-stone-400 ring-1 ring-gray-400/10"
                   src={project.imageUrl}
                   alt="Project"
                   height={48}
@@ -43,8 +42,7 @@ export default function Projects() {
               <div className="group-hover:opacity-75 transition duration-300 ease-in-out">
                 <h3 className="mt-2 ml-2 text-md font-semibold leading-6 text-fc-50 dark:text-fc-100 group-hover:text-gray-600 dark:group-hover:text-gray-400">
                   {project.title}                
-                </h3>
-                {/* <p className="mt-1 ml-2 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-500">{project.tech}</p> */}
+                </h3>                
                 <div className="flex flex-row flex-wrap max-w-fit">
                 {project.tech.map(t => 
                   
