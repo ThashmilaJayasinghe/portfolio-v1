@@ -1,4 +1,4 @@
-export default function Project1() {
+export default function Project3() {
   return(
     <div>
       <div className="flex items-center justify-center w-full group-hover:opacity-75 transition duration-300 ease-in-out">                

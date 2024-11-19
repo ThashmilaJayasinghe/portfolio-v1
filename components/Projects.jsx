@@ -11,6 +11,7 @@ export default function Projects() {
     6: false,
     3: false,
     4: false,
+    5: false,
   });
 
   return (

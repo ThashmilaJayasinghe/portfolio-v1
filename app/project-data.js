@@ -29,8 +29,8 @@ const projects = [
   {
     id: 3,
     open: false,
-    title: 'Recipe Management Web App With JWT Authentication',
-    tech: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    title: 'Recipe Management App with JWT Authentication',
+    tech: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'JWT'],
     imageUrl: '/recipe-t.png',
     demo: 'https://recipe-app-dt8d.onrender.com/',
     source: 'https://github.com/ThashmilaJayasinghe/Recipe-App',
@@ -43,6 +43,15 @@ const projects = [
     imageUrl: '/pomodoro-t.png',
     demo: 'https://pomodo-timer.netlify.app/',
     source: 'https://github.com/ThashmilaJayasinghe/pomodoro-timer',
+  },
+  {
+    id: 5,
+    open: false,
+    title: 'Pac-Man Game',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    imageUrl: '/pacman-t.png',
+    demo: 'https://pac-manjs.netlify.app/',
+    source: 'https://github.com/ThashmilaJayasinghe/Pac-Man',
   },
   // {
   //   id: 4,

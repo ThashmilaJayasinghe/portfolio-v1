@@ -6,6 +6,7 @@ import Project2 from './Project2.jsx';
 import Project6 from './Project6.jsx';
 import Project3 from './Project3.jsx';
 import Project4 from './Project4.jsx';
+import Project5 from './Project5.jsx';
 
 export default function Details({ open, setOpen, id, title, tech, demo, source }) {
 
@@ -51,6 +52,7 @@ export default function Details({ open, setOpen, id, title, tech, demo, source }
                             case 6: return <Project6 />;
                             case 3: return <Project3 />;
                             case 4: return <Project4 />;
+                            case 5: return <Project5 />;
                             default: return <Project1 />;
                           }
                         })()}
