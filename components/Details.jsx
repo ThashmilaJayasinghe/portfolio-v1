@@ -49,9 +49,9 @@ export default function Details({ open, setOpen, id, title, tech, demo, source }
                           switch(id) {
                             case 1: return <Project1 />;
                             case 2: return <Project2 />;
-                            case 6: return <Project6 />;
-                            case 3: return <Project3 />;
+                            case 6: return <Project6 />;                            
                             case 4: return <Project4 />;
+                            case 3: return <Project3 />;
                             case 5: return <Project5 />;
                             default: return <Project1 />;
                           }

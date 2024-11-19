@@ -9,8 +9,8 @@ export default function Projects() {
     1: false,
     2: false,
     6: false,
-    3: false,
     4: false,
+    3: false,
     5: false,
   });
 

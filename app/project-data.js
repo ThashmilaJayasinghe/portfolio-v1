@@ -27,15 +27,6 @@ const projects = [
     source: null,
   },
   {
-    id: 3,
-    open: false,
-    title: 'Recipe Management App with JWT Authentication',
-    tech: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'JWT'],
-    imageUrl: '/recipe-t.png',
-    demo: 'https://recipe-app-dt8d.onrender.com/',
-    source: 'https://github.com/ThashmilaJayasinghe/Recipe-App',
-  },
-  {
     id: 4,
     open: false,
     title: 'Pomodoro Timer',
@@ -43,6 +34,15 @@ const projects = [
     imageUrl: '/pomodoro-t.png',
     demo: 'https://pomodo-timer.netlify.app/',
     source: 'https://github.com/ThashmilaJayasinghe/pomodoro-timer',
+  },
+  {
+    id: 3,
+    open: false,
+    title: 'Recipe Management App with JWT Authentication',
+    tech: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'JWT'],
+    imageUrl: '/recipe-t.png',
+    demo: 'https://recipe-app-dt8d.onrender.com',
+    source: 'https://github.com/ThashmilaJayasinghe/Recipe-App',
   },
   {
     id: 5,
@@ -53,33 +53,6 @@ const projects = [
     demo: 'https://pac-manjs.netlify.app/',
     source: 'https://github.com/ThashmilaJayasinghe/Pac-Man',
   },
-  // {
-  //   id: 4,
-  //   open: false,
-  //   title: 'Java API',   
-  //   tech: ['ReactJS', 'MongoDB', 'GitHub'],
-  //   imageUrl: '/agri-t.png',
-  //   demo: null,
-  //   source: null,
-  // },
-  // {
-  //   id: 5,
-  //   open: false,
-  //   title: 'DSA Project',
-  //   tech: ['ReactJS', 'MongoDB', 'GitHub'],
-  //   imageUrl: '/agri-t.png',
-  //   demo: null,
-  //   source: null,
-  // },
-  // {
-  //   id: 3,
-  //   open: false,
-  //   title: 'Research',
-  //   tech: ['ReactJS', 'MongoDB', 'GitHub'],
-  //   imageUrl: '/agri-t.png',
-  //   demo: null,
-  //   source: null,
-  // },
 ]
 
 export default projects;
