@@ -4,6 +4,8 @@ import { ExclamationTriangleIcon, XMarkIcon  } from '@heroicons/react/24/outline
 import Project1 from './Project1.jsx';
 import Project2 from './Project2.jsx';
 import Project6 from './Project6.jsx';
+import Project3 from './Project3.jsx';
+import Project4 from './Project4.jsx';
 
 export default function Details({ open, setOpen, id, title, tech, demo, source }) {
 
@@ -47,6 +49,8 @@ export default function Details({ open, setOpen, id, title, tech, demo, source }
                             case 1: return <Project1 />;
                             case 2: return <Project2 />;
                             case 6: return <Project6 />;
+                            case 3: return <Project3 />;
+                            case 4: return <Project4 />;
                             default: return <Project1 />;
                           }
                         })()}
