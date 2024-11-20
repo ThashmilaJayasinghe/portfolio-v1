@@ -76,7 +76,7 @@ export default function Header() {
           <a href="#contact" className="text-sm font-semibold leading-8 text-fc-50 dark:text-fc-100">
             Contact
           </a>          
-          <a href="https://drive.google.com/file/d/1-JzkJh84wZtg05mSMZhHSucXvrlcuZCb/view?usp=sharing" target="_blank" download="Thashmila_Jayasinghe_resume.pdf" className="rounded-md bg-brown-150 px-3.5 text-sm leading-8 text-white shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150">
+          <a href="https://drive.google.com/file/d/12AmN09A8kS0vVdF8NAQidACRqbn1FXyj/view?usp=drive_link" target="_blank" download="Thashmila_Jayasinghe_resume.pdf" className="rounded-md bg-brown-150 px-3.5 text-sm leading-8 text-white shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150">
             Resume
           </a>
         </div>
@@ -131,7 +131,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="https://drive.google.com/file/d/1-JzkJh84wZtg05mSMZhHSucXvrlcuZCb/view?usp=sharing"
+                  href="https://drive.google.com/file/d/12AmN09A8kS0vVdF8NAQidACRqbn1FXyj/view?usp=drive_link"
                   target="_blank"
                   download="Thashmila_Jayasinghe_resume.pdf"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-fc-50 dark:text-fc-100 hover:bg-brown-75 dark:hover:bg-brown-175 dark:hover:bg-brown-175 dark:hover:bg-brown-175"
