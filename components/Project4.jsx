@@ -11,7 +11,7 @@ export default function Project4() {
       </div>
       <p className="mt-4 text-sm leading-6 text-fc-50 dark:text-fc-100">
       This web application is a digital Pomodoro Timer designed to enhance productivity and focus. 
-      Built using the MERN stack, this tool implements the classic Pomodoro Technique, allowing users to break down 
+      Built using React, this tool implements the classic Pomodoro Technique, allowing users to break down 
       work into focused intervals.
       </p>  
       <h4 className="mt-6 text-base text-fc-50 dark:text-fc-100 font-semibold">
