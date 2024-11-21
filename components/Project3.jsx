@@ -26,7 +26,7 @@ export default function Project3() {
         <li><b>User Authentication and Authorization:</b> Secure user accounts with JWT.</li>
       </ul>  
       <p className="mt-4 text-sm leading-6 text-fc-50 dark:text-fc-100">
-        **Please note that this application is hosted on the free tier of Render, and as a result,
+        **Please note that this application is hosted on the free tier of Render, and as a result 
         there may be occasional delays in loading times.
       </p>  
     </div>
