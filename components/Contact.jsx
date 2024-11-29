@@ -107,6 +107,13 @@ export default function Contact() {
                           alt="GitHub"                            
                         />
                       </a>
+                      <a href="https://leetcode.com/thashmilajayasinghe/" target="_blank" className="w-10 h-10 rounded-md bg-brown-150 px-1.5 py-1.5 shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150">
+                        <img
+                          className=""
+                          src="leetcode2.svg"
+                          alt="Leetcode"
+                        />
+                      </a>   
                       <a href="https://medium.com/@thashmilajayasinghe" target="_blank" className="w-10 h-10 rounded-md bg-brown-150 px-1.5 py-1.5 shadow-sm hover:bg-brown-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brown-150">
                         <img
                           className=""
